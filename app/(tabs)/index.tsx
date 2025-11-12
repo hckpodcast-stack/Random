@@ -10,15 +10,15 @@ import { Link } from 'expo-router';
 export default function HomeScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#ffffffff', dark: '#1D3D47' }}
+      headerBackgroundColor={{ light: '#ffffffff', dark: '#F5F3EF' }}
       headerImage={
         <Image
-          source={require('@/assets/images/partial-react-logo.png')}
-          style={styles.reactLogo}
+          source={require('@/assets/images/FocusSprint.png')}
+          style={styles.FocusSprintLogo}
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Hello Mother Fuckers!</ThemedText>
+        <ThemedText type="title">"When focus drifts, we bring you back"</ThemedText>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -88,11 +88,11 @@ const styles = StyleSheet.create({
     gap: 8,
     marginBottom: 8,
   },
-  reactLogo: {
-    height: 178,
+  FocusSprintLogo: {
+    height: 185,
     width: 290,
     bottom: 0,
-    left: 0,
+    left: 60,
     position: 'absolute',
   },
 });
